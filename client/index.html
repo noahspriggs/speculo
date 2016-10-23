@@ -1,0 +1,21 @@
+hello world
+
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/client/src/phaser.js"></script>
+<script type="text/javascript">
+	var socket = io()
+
+	var game = new Phaser.Game(800, 600, Phaser.AUTO, 'nice-game', { preload: preload, create: create });
+
+	function preload() {
+		console.log('preloading');
+	};
+
+	function create() {
+	game.stage.backgroundColor = 0x337799;
+		console.log('created');
+
+	};
+
+
+</script>
